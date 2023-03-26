@@ -1,19 +1,16 @@
-<script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <div>111</div>
 </template>
-
+<script>
+import { first } from './components/linkList/index'
+first.append("第一个节点");
+first.append("第二个节点");
+first.append("第三个节点");
+first.append("第四个节点");
+first.traverse();
+</script>
 <style scoped>
 .logo {
   height: 6em;

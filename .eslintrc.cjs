@@ -8,20 +8,25 @@ module.exports = {
     "eslint:recommended",
     "plugin:vue/vue3-essential",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
+    "plugin:prettier/recommended"
   ],
   overrides: [],
   parser: "vue-eslint-parser",
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    parser: "@typescript-eslint/parser",
+    parser: "@typescript-eslint/parser"
   },
   plugins: ["vue", "@typescript-eslint"],
   rules: {
     indent: "off",
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
-    semi: ["error", "always"]
+    semi: ["error", "always"],
+    "no-inferrable-types": [
+      true,
+      "ignore-params",
+      "ignore-properties"
+    ],
   }
 };
