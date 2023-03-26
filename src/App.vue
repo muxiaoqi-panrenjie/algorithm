@@ -4,7 +4,7 @@
   <div>111</div>
 </template>
 <script>
-import { first } from './components/linkList/index'
+import { first } from "./components/linkList/index";
 first.append("第一个节点");
 first.append("第二个节点");
 first.append("第三个节点");

@@ -11,7 +11,7 @@ class myNode<T> {
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 class LinkedList<T> {
   private head: myNode<T> | null = null;
-  private size: number = 0;
+  private size = 0;
   getlength() {
     return this.size;
   }
@@ -20,11 +20,11 @@ class LinkedList<T> {
     // 创建一个新的节点
     const newNode = new myNode(value);
     // 判断this.head 是否是null
-    if(!this.head) {
+    if (!this.head) {
       this.head = newNode;
-    }else {
+    } else {
       let current = this.head;
-      while(current.next) {
+      while (current.next) {
         current = current.next;
       }
       current.next = newNode;
@@ -35,19 +35,14 @@ class LinkedList<T> {
   traverse() {
     const values: T[] = [];
     let current = this.head;
-    while(current) {
+    while (current) {
       values.push(current.value);
       current = current.next;
     }
     console.log(values.join("->"));
   }
   //  insert插入链表
-  insert(value: T,position: number) {
-    
-  }
 }
 
 const first = new LinkedList<string>();
-export {
-  first
-}
+export { first };
