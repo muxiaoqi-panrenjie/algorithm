@@ -9,6 +9,12 @@ first.append("第一个节点");
 first.append("第二个节点");
 first.append("第三个节点");
 first.append("第四个节点");
+first.insert("第0个节点",0);
+first.insert("第3.5个节点",4);
+first.insert("第5个节点",5);
+first.removeAt(4);
+first.removeAt(0);
+first.get(0);
 first.traverse();
 </script>
 <style scoped>
